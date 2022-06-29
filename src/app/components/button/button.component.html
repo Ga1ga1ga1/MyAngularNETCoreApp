@@ -1,0 +1,10 @@
+<ng-container>
+  <button [class.selected] = "theme === selectedTheme" *ngFor="let theme of themes" (click)="onSelect(theme)">
+    {{theme.name}}
+  </button>
+  <div *ngIf="selectedTheme">
+    {{selectedTheme.name}}
+  </div>
+</ng-container>
+
+
